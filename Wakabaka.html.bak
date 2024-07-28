@@ -6,9 +6,9 @@
     <title>Wakabaka Website <img src="wakabakalogo.png" alt="Wakabaka Website Name" height="70px" width="70px"></title>
     <link rel="stylesheet" href="wakabaka.css">
 </head>
-<body>
+
   <img src="wakabakaheading.png" alt="Wakabaka Website Name" id="site-logo">
-  <im src="yellow bg.jpg" alt="Wakabaka Website Name" id="upperbackground" height="1000" width="100%">
+  <img src="yellow bg.jpg" alt="Wakabaka Website Name" id="upperbackground" height="1000" width="100%">
   <div id="sidepanel"> 
      <a href= "Wakabaka.html" title="Wakabaka.com"></br><img src="wakabakalogo.png" alt="Wakabaka Website Name" height="50px" width="50px"><br></a>
      <a href= "Wakabaka.books.html" title="Wakabaka.books.com"></br><img src="wakabakabooks.png" alt="Wakabaka Website Name" height="50px" width="50px"><br></a>
@@ -18,8 +18,16 @@
 	 <a href= "Wakabaka.football.html" title="football.Wakabaka.com"></br><img src="wakabakafootball.png" alt="Wakabaka Website Name" height="50px" width="50px"><br></a>
 	 
 	 </div>
-<div id="notice-board">
+     <div id="createrspart">
+        <h1>This is my Webpage that I have created<br>
+             for my portfolio. I can create many designs<br>
+             for your website. I hope you will like my web page<br>
+            i have also created some other projects that are desplaced<br>
+            on the left side panel</h1>
 
+     </div>
+<div id="notice-board">
+       
         <div class="news-item">
             <a href="SDCC 2024: The Biggest News, Announcements, And Trailers From Comic-Con" height="50" title="News 2">
                 <img src="linktransformer.png" alt="News 2">
@@ -64,5 +72,46 @@
         </div>
        
     </div>
+    <div id="Links">
+        
+        <table>
+            <tr>
+                <th>Anime</th>
+                <th>Movie</th>
+                <th>Games</th>
+                <th>Books</th>
+            </tr>
+            <tr>
+                <td><a href="anime1.html">One Peice</a></td>
+                <td><a href="movie1.html">Deadpool and Wolvarine</a></td>
+                <td><a href="game1.html">Sekiro</a></td>
+                <td><a href="book1.html">Ikigai</a></td>
+            </tr>
+            <tr>
+                <td><a href="anime2.html">Demon Slayer</a></td>
+                <td><a href="movie2.html">Doomsday</a></td>
+                <td><a href="game2.html">Apex Legend</a></td>
+                <td><a href="book2.html">San Tzu</a></td>
+            </tr>
+            <tr>
+                <td><a href="anime3.html">Jujutsu Kaisen</a></td>
+                <td><a href="movie3.html">Superman</a></td>
+                <td><a href="game3.html">FC24</a></td>
+                <td><a href="book3.html">Sherlock</a></td>
+            </tr>
+            <tr>
+                <td><a href="anime4.html">Naruto</a></td>
+                <td><a href="movie4.html">Batman</a></td>
+                <td><a href="game4.html">Wukong</a></td>
+                <td><a href="book4.html">Assassins</a></td>
+            </tr>
+        </table>
+           <h1>TOP <br>Trending<h1>
+        </div>  
+   <div id="zoropic">
+    <img src="zoro.PNG" height="1000px"><br>
+    <>
+
+   </div>
 </body>
 </html>
