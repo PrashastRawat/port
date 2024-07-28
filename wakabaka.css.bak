@@ -5,27 +5,29 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-	background-color:#8041bb;
+	background-color:#4abbe1e3;
 
 }
 
 
-
 #site-logo {
   
-    height: 150px;
-	width:700px;
+    height: 120px;
+	width:600px;
 	position:absolute; text-align:center;
+    z-index: 2
 	   
 }
 
 
 #upperbackground{text-align:center;
+    position: absolute; 
 }
 
 
 #sidepanel{position:absolute; position:fixed; left:0px ; background-color: white; margin-top: 0px;  padding:20px; 
 height:100%;
+z-index: 2;
 
 }
 #sidepanel img {
@@ -33,32 +35,34 @@ height:100%;
 }
 #sidepanel a:hover img {
     transform: scale(1.08);
-    box-shadow: 0 0 10px purple;
+    box-shadow: 0 0 10px rgb(114, 70, 114);
 }
 #notice-board {
     display: flex;
     flex-wrap: wrap;
     gap: 5px; /* Adds 5px gap between news items */
     padding: 10px;
-    background-color: transparent; /* Replace with your background image path */
+    background-color: rgba(255, 255, 255, 0.3); /* Replace with your background image path */
+	backdrop-filter: Blur(10px);
     background-size: cover;
     background-position: center;
 	position:absolute; 
-	top:30%;
+	top:550px;
 	width: 1800px;
 	left:7%;
-	 border-radius: 25px;
+    border-radius: 25px;
+    z-index: 2;
 
 }
 
 .news-item {
     flex: 1 0 calc(12.5% - 10px); /* 8 items per row with 5px gap */
     margin: 10px;
-    background-color: #a28923;
+    background-color: transparent;
     border: 0px solid #ddd;
     box-shadow: 0 0px 2px rgba(0, 0, 0, 0.1);
 	border-radius: 5px;
-	 padding: 4px;
+	padding: 4px;
 
 }
 
@@ -73,11 +77,11 @@ height:100%;
 .news-item p {
 	font-family: Comic Sans MS;
 	font-size: 20px;
-	color: white;
+	color: rgba(68, 10, 93, 0.841);
 	text-decoration: none;
     padding: 4px;
     text-align: left;
-    background-color: #a28923; /* Yellow background for the text */
+    background-color: transparent; /* Yellow background for the text */
 }
 a:link { 
   text-decoration: none; 
@@ -91,5 +95,63 @@ a:hover {
 a:active { 
   text-decoration: none; 
 }
+#createrspart {position:absolute; top:20%; 
+    left:200px;
+    margin: 20px;
+    padding: 20px;
+    background-color:rgba(251, 251, 251, 0.342);
+    backdrop-filter: blur(40px) ;
+    border-radius: 20px;
 
+}
+#createrspart h1{font-family: Comic Sans MS;}
+#Links{position: absolute; 
+    top:1000px; 
+    left: 50px;
+    height: 250px;
+    width: 1928px;
+    padding-left: 50px;
+background-color: rgb(32, 5, 49);
+margin-bottom: 20px;
+font-family: Comic Sans MS;
+color:#ffffff;
+font-size: large;
+padding-top: 30px;
+z-index: 2;
+  }
+ #Links table {
+    position: absolute;
+    width: 70%;
+    border-collapse: collapse;
+    color: #bc8a5f;
+    text-align: left;
+    left:300px;
+}
 
+#Links th, td {
+    border-left: 1px solid #ddd;
+    padding left: 4px;
+    text-align: :left;
+    font-family: Comic Sans MS;
+    font-size: 20px; 
+    margin-top 20px;
+}
+#Links a {
+    text-decoration: none;
+    color: #ffffff;
+}
+#Links h1{position: absolute;
+    text-align: left;
+top:30px;
+background-color: #e3b623;
+color: black;
+border-radius: 10px;
+padding: 5px;
+}
+#zoropic{position: absolute;
+         right:0%;
+         height: 80%;
+         z-index: 1;
+         top:100px;
+
+        }
