@@ -149,4 +149,7 @@ padding: 5px;
 #zoropic{position: absolute;
          right:0%;
          height: 80%;
+         z-index: 1;
+         top:100px;
+
         }
