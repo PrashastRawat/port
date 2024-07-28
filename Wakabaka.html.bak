@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wakabaka Website <img src="wakabakalogo.png" alt="Wakabaka Website Name" height="70px" width="70px"></title>
+    <link rel="stylesheet" href="wakabaka.css">
+</head>
+<body>
+  <img src="wakabakaheading.png" alt="Wakabaka Website Name" id="site-logo">
+  <im src="yellow bg.jpg" alt="Wakabaka Website Name" id="upperbackground" height="1000" width="100%">
+  <div id="sidepanel"> 
+     <a href= "Wakabaka.html" title="Wakabaka.com"></br><img src="wakabakalogo.png" alt="Wakabaka Website Name" height="50px" width="50px"><br></a>
+     <a href= "Wakabaka.books.html" title="Wakabaka.books.com"></br><img src="wakabakabooks.png" alt="Wakabaka Website Name" height="50px" width="50px"><br></a>
+	 <a href= "Wakabaka.games.html" title="Wakabaka.games.com"></br><img src="wakabakagames.png" alt="Wakabaka Website Name" height="50px" width="50px"><br></a>
+	 <a href= "Wakabaka.armedforces.html" title="Armed forces.Wakabaka.com"></br><img src="wakabakaarmedf.png" alt="Wakabaka Website Name" height="50px" width="50px"><br></a>
+	 <a href= "Wakabaka.cricket.html" title="cricket.Wakabaka.com"></br><img src="wakabakacricket.png" alt="Wakabaka Website Name" height="50px" width="50px"><br></a>
+	 <a href= "Wakabaka.football.html" title="football.Wakabaka.com"></br><img src="wakabakafootball.png" alt="Wakabaka Website Name" height="50px" width="50px"><br></a>
+	 
+	 </div>
+<div id="notice-board">
+
+        <div class="news-item">
+            <a href="SDCC 2024: The Biggest News, Announcements, And Trailers From Comic-Con" height="50" title="News 2">
+                <img src="linktransformer.png" alt="News 2">
+                <p>SDCC 2024:The <br>Biggest News,<br> Announcements,<br> And Trailers<br> From Comic-Con</p>
+            </a>
+        </div>
+        <div class="news-item">
+            <a href="SDCC 2024: The Biggest News, Announcements, And Trailers From Comic-Con" height="50"title="News 3">
+                <img src="linktransformer.png" alt="News 3">
+                <p>SDCC 2024:The <br>Biggest News,<br> Announcements,<br> And Trailers<br> From Comic-Con</p>
+            </a>
+        </div>
+        <div class="news-item">
+            <a href="SDCC 2024: The Biggest News, Announcements, And Trailers From Comic-Con"height="50" title="News 4">
+                <img src="linktransformer.png" alt="News 4">
+                <p>SDCC 2024:The <br>Biggest News,<br> Announcements,<br> And Trailers<br> From Comic-Con</p>
+            </a>
+        </div>
+        <div class="news-item">
+            <a href="SDCC 2024: The Biggest News, Announcements, And Trailers From Comic-Con" height="50"title="News 5">
+                <img src="linktransformer.png" alt="News 5">
+                <p>SDCC 2024:The <br>Biggest News,<br> Announcements,<br> And Trailers<br> From Comic-Con</p>
+            </a>
+        </div>
+		<div class="news-item">
+            <a href="SDCC 2024: The Biggest News, Announcements, And Trailers From Comic-Con" height="50"title="News 5">
+                <img src="linktransformer.png" alt="News 5">
+                <p>SDCC 2024:The <br>Biggest News,<br> Announcements,<br> And Trailers<br> From Comic-Con</p>
+            </a>
+        </div>
+		<div class="news-item">
+            <a href="SDCC 2024: The Biggest News, Announcements, And Trailers From Comic-Con" height="50"title="News 5">
+                <img src="linktransformer.png" alt="News 5">
+                <p>SDCC 2024:The <br>Biggest News,<br> Announcements,<br> And Trailers<br> From Comic-Con</p>
+            </a>
+        </div>
+		<div class="news-item">
+            <a href="SDCC 2024: The Biggest News, Announcements, And Trailers From Comic-Con" height="50"title="News 5">
+                <img src="linktransformer.png" alt="News 5">
+                <p>SDCC 2024:The <br>Biggest News,<br> Announcements,<br> And Trailers<br> From Comic-Con</p>
+            </a>
+        </div>
+       
+    </div>
+</body>
+</html>
