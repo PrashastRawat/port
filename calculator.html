@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+     body{
+         display: flex;
+        justify-content: center; /* Center horizontally */
+        align-items: center;     /* Center vertically */
+       
+     background-image: url(calbg.jpg);
+     background-position: top;
+     background-size: cover;
+     background-repeat: no-repeat;
+     }
+     .Cal{
+        
+        background-color: rgb(49, 43, 43);
+        text-align: left;
+        border: 10px rgb(53, 49, 49) solid;
+        border-radius: 5px;
+        padding: 20px;
+        margin: 10px;
+        width: auto;
+        height: auto;
+        
+     }
+   
+     .Cal .firstRow{
+        display: inline;
+        width: 100px;
+       
+     }
+     .Cal .firstRow .result{
+        background-color: rgb(237, 237, 237);
+        border: 2px black solid ;
+        height: 30px;
+        font-size: small;
+     }
+     .Cal .firstRow .b1{
+       border-radius: 50%;
+       height: 34px;
+       font-size: medium;
+       font-weight: bolder;
+        background-color: rgb(49, 60, 85);
+        width: 40px;
+        
+     }
+    .Cal .buttons{
+        display: flex;
+        flex-direction: column;
+    }
+    .Cal .buttons input{
+        color: rgb(255, 255, 255);
+        text-align: center;
+        font-size: larger;
+        font-weight: bolder;
+        width: 50px;
+        height: 50px;
+        padding: 5px;
+        background-color: rgb(49, 60, 85);
+        border-radius: 50%;
+    }
+     </style>
+  
+    
+</head>
+<body>
+    <div class="Cal">
+        <div class="firstRow">
+            <input class="result" type="text" id="result" value="" readonly>
+            <input type="button" class="b1" value="C" onclick="clearResult()">
+        </div>
+        <div class="buttons">
+        <div class="row1">
+            <input type="button" value="1" onclick="put('1')">
+            <input type="button" value="2" onclick="put('2')">
+            <input type="button" value="3" onclick="put('3')">
+            <input type="button" value="+" onclick="put('+')">
+        </div>
+        <div class="row2">
+            <input type="button" value="4" onclick="put('4')">
+            <input type="button" value="5" onclick="put('5')">
+            <input type="button" value="6" onclick="put('6')">
+            <input type="button" value="-" onclick="put('-')">
+        </div>
+        <div class="row3">
+            <input type="button" value="7" onclick="put('7')">
+            <input type="button" value="8" onclick="put('8')">
+            <input type="button" value="9" onclick="put('9')">
+            <input type="button" value="X" onclick="put('*')">
+        </div>
+        <div class="row4">
+            <input type="button" value="." onclick="put('.')">
+            <input type="button" value="0" onclick="put('0')">
+            <input type="button" value="=" onclick="calculate()">
+            <input type="button" value="/" onclick="put('/')">
+        </div>
+        </div>
+         
+
+    </div>
+
+<script>
+    function put(value){
+    document.getElementById("result").value+= value;
+    }
+
+    function clearResult(){
+        document.getElementById("result").value ="";
+    }
+    function calculate(){
+        let ex = document.getElementById("result").value;
+        ex = ex.replace(/X/g, '*');
+        try{
+            let result = eval(ex);
+            document.getElementById("result").value = result;
+        } catch(e){
+            document.getElementById("result").value="Error";
+        }
+    }
+</script>
+</body>
+</html>
