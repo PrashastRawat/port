@@ -24,5 +24,15 @@ function calculateLove(){
         document.getElementById("result-percentage").innerText =  "100%"
        
     }
+    if(yourName === "Anshuman Pratap Singh" && crushName === "Ishita Chhetri"){
+        document.getElementById("result-message").innerText = yourName + " and " + crushName + " chance of love:"
+        document.getElementById("result-percentage").innerText =  "100%"
+       
+    }
+    if(yourName === "Ishita Chhetri" && crushName === "Anshuman Pratap Singh"){
+        document.getElementById("result-message").innerText = yourName + " and " + crushName + " chance of love:"
+        document.getElementById("result-percentage").innerText =  "100%"
+       
+    }
 }
 
