@@ -14,4 +14,15 @@ function calculateLove(){
         document.getElementById("result-message").innerText = yourName + " and " + crushName + " chance of love:"
         document.getElementById("result-percentage").innerText = percentage.toString() + "%"
         }
+    if(yourName === "Prashast Rawat" && crushName === "Khushbu Rana"){
+        document.getElementById("result-message").innerText = yourName + " and " + crushName + " chance of love:"
+        document.getElementById("result-percentage").innerText =  "100%"
+       
+    }
+    if(yourName === "Khushbu Rana" && crushName === "Prashast Rawat"){
+        document.getElementById("result-message").innerText = yourName + " and " + crushName + " chance of love:"
+        document.getElementById("result-percentage").innerText =  "100%"
+       
+    }
 }
+
