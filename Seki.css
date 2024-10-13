@@ -1,0 +1,12 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    background-color: rgb(202, 25, 105);
+}
+
+#board{
+    /* background-color: skyblue;*/
+    background-image: url("./SekiBG.png");
+    background-position: center;
+    background-size: cover;
+}
