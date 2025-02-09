@@ -1,104 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Distressed&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap");
 
-
-body {
-    background: #7859b8;
-    font-family: Poppins;
-    font-size: larger;
-    font-weight: bolder;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    margin: 0;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Rubik Distressed", serif;;
 }
-
-#weather-container {
-    background: rgba(255, 255, 255, 0.3);
-    max-width: 400px;
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    text-align: center;
+.slider-container{
+  width: 100%;
+  height: 100vh;
+  background-image: url('Imagesbg.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
-h2, label, p {
-    color: #fff;
-    margin: 8px 0;
-    text-shadow: 2px 2px 7px #8044a8;
+.slider-images{
+  display: flex;
+  align-items: center;
+  gap: 21px;
 }
-
-input {
-    width: calc(100% - 16px);
-    padding: 8px;
-    box-sizing: border-box;
-    border-radius: 10px;
-    border: 1px solid white;
-    margin-top: 20px;
+.slider-images img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 6px;
 }
-
-button {
-    background: #debff4;
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    margin-top: 20px;
-    width: 100px;
-    font-size: 15px;
+.slider-img{
+  width: 110px;
+  border-radius: 6px;
+  cursor: pointer;
+  position: relative;
+  transition: 0.7s ease;
 }
-
-button:hover {
-    background: #8b48d7;
+.slider-images .slider-img:first-child, .slider-images .slider-img:last-child{
+  height: 480px;
 }
-
-#temp-div p {
-    font-size: 60px;
-    margin-top: -30px;
+.slider-images .slider-img:nth-child(2), .slider-images .slider-img:nth-child(6){
+  height: 560px;
 }
-
-#weather-info {
-    font-size: 20px;
+.slider-images .slider-img:nth-child(3), .slider-images .slider-img:nth-child(4), .slider-images .slider-img:nth-child(5){
+  height: 665px;
 }
-
-#weather-icon {
-    width: 200px;
-    height: 200px;
-    margin: 0 auto 10px; 
-    margin-bottom: 0;
-    display: none;
-    font-weight: 1200;
+h1{
+    font-family: "Rubik Distressed", serif;
+  font-size: 40px;
+  font-weight: 700;
+  text-align: left;
+  text-transform: uppercase;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: -10%;
+  transform: rotate(270deg);
+  transition: 0.7s ease;
 }
-
-#hourly-forecast {
-    margin-top: 50px;
-    overflow-x: auto;
-    white-space: nowrap;
-    display: flex;
-    justify-content: space-between;
+.details{
+  position: absolute;
+  bottom: 43px;
+  left: 43px;
 }
-
-.hourly-item {
-    flex: 0 0 auto;
-    width: 80px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-right: 10px;
-    color: white;
+.details h2{
+    font-family: "Rubik Distressed", serif;
+  font-size: 26px;
+  font-weight: 700;
+  text-align: left;
+  line-height: 44px;
+  text-align: left;
+  color: #fff;
+  text-transform: uppercase;
+  transition: 0.7s ease;
+  display: none;
 }
-
-.hourly-item img {
-    width: 30px;
-    height: 30px;
-    margin-bottom: 5px;
+.details p{
+    font-family: "Rubik Distressed", serif;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: left;
+  line-height: 33px;
+  text-align: left;
+  color: #fff;
+  text-transform: uppercase;
+  transition: 0.7s ease;
+  display: none;
 }
-
-#hourly-heading {
-    color: #fff;
-    margin-top: 10px;
+.slider-img.active{
+  width: 766px !important;
+  height: 750px !important;
+}
+.slider-img.active h1{
+   display: none;
+}
+.slider-img.active .details p, .slider-img.active .details h2{
+  display: block;
 }

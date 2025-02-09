@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <h1>Hello</h1>
+    <section class="slider-container">
+        <div class="slider-images">
+            <div class="slider-img">
+                <img src="1.png" alt="1">
+                <h1>Ichigo</h1>
+                <div class="details">
+                    <h2>Bleach</h2>
+                    <p>Soul Reaper</p>
+                </div>
+            </div>
+            <div class="slider-img">
+                <img src="2.png" alt="2">
+                <h1>Luffy</h1>
+                <div class="details">
+                    <h2>One Piece</h2>
+                    <p>Gum-Gum</p>
+                </div>
+            </div>
+            <div class="slider-img">
+                <img src="3.png" alt="3">
+                <h1>Goku</h1>
+                <div class="details">
+                    <h2>Dragonball</h2>
+                    <p>Saiyan</p>
+                </div>
+            </div>
+            <div class="slider-img active">
+                <img src="4.png" alt="4">
+                <h1>Zoro</h1>
+                <div class="details">
+                    <h2>One Piece</h2>
+                    <p>Swordsman</p>
+                </div>
+            </div>
+            <div class="slider-img">
+                <img src="5.png" alt="5">
+                <h1>Naruto</h1>
+                <div class="details">
+                    <h2>Naruto</h2>
+                    <p>Ninja</p>
+                </div>
+            </div>
+            <div class="slider-img">
+                <img src="6.png" alt="6">
+                <h1>Satoru Gojo</h1>
+                <div class="details">
+                    <h2>Jujutsu Kaisen</h2>
+                    <p>Sorcerer</p>
+                </div>
+            </div>
+            <div class="slider-img">
+                <img src="7.png" alt="7">
+                <h1>Tanjiro</h1>
+                <div class="details">
+                    <h2>Demon Slayer</h2>
+                    <p>Demon Slayer</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- jQuery Library -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Custom Script -->
+    <script>
+      jQuery(document).ready(function ($) {
+        $(".slider-img").on("click", function () {
+          $(".slider-img").removeClass("active");
+          $(this).addClass("active");
+        });
+      });
+    </script>
+</body>
+</html>
